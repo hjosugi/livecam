@@ -1,0 +1,34 @@
+name: カメラ・内容の問題を報告
+description: 停止、誤位置、公開停止、削除要請、プライバシー上の懸念を報告する
+title: "[Report] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        映像のスクリーンショット、人物・車両番号などの識別情報、秘密情報は貼らないでください。悪用可能な脆弱性は Security タブから非公開で報告してください。
+  - type: input
+    id: camera
+    attributes:
+      label: カメラ ID または Open LiveCam Atlas の URL
+      placeholder: caltrans:d4:1 または https://.../?camera=...
+    validations:
+      required: true
+  - type: dropdown
+    id: problem
+    attributes:
+      label: 問題の種類
+      options:
+        - 公開停止・削除要請
+        - プライバシー・安全上の懸念
+        - 誤った位置・名称・帰属表示
+        - 読み込みエラー・リンク切れ
+        - その他
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: 詳細
+      description: 個人を識別する情報を含めず、確認できる事実を記載してください。
+    validations:
+      required: true

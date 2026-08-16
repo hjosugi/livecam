@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Open LiveCam Atlas の目的、データ方針、プライバシー、安全上の制限。"
+    />
+    <meta name="theme-color" content="#07110f" />
+    <meta name="color-scheme" content="dark" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests"
+    />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <title>このサイトについて — Open LiveCam Atlas</title>
+  </head>
+  <body class="about-body">
+    <header class="about-nav">
+      <a class="brand" href="./" aria-label="Open LiveCam Atlas ホーム">
+        <span class="brand-mark" aria-hidden="true"><span></span></span>
+        <span><strong>OPEN LIVECAM</strong><small>PUBLIC CAMERA ATLAS</small></span>
+      </a>
+      <a href="./" class="back-link">← 地図へ戻る</a>
+    </header>
+    <main class="about-main">
+      <p class="eyebrow">ABOUT / SAFETY / SOURCES</p>
+      <h1>公開情報を、節度ある形で<br />見つけやすくする。</h1>
+      <p class="about-lead">
+        Open LiveCam Atlas は、行政機関などが一般向けに公開している固定カメラを横断検索するオープンソースの地図です。
+        非公開カメラへ接続するツールでも、人を追跡する監視システムでもありません。
+      </p>
+
+      <section class="principle-grid" aria-label="設計原則">
+        <article><span>01</span><h2>Public by design</h2><p>公開元が一般向けに提供し、HTTPSで取得できるソースだけを収録します。</p></article>
+        <article><span>02</span><h2>Load on intent</h2><p>映像や画像は利用者が選択するまで読み込まず、不要な外部接続を避けます。</p></article>
+        <article><span>03</span><h2>No tracking</h2><p>解析・録画・顔認識・ナンバー認識・行動追跡・カメラ制御を行いません。</p></article>
+      </section>
+
+      <section class="about-section">
+        <div><p class="section-number">01</p><h2>収録するもの</h2></div>
+        <div>
+          <p>道路状況、気象、災害・交通案内などのために公的機関が公開している固定カメラと、公式カメラ一覧へのリンクを収録します。</p>
+          <ul><li>公開元と利用条件を明示できる</li><li>位置と目的が一般公開されている</li><li>認証情報やアクセス制御の回避を必要としない</li></ul>
+        </div>
+      </section>
+
+      <section class="about-section">
+        <div><p class="section-number">02</p><h2>収録しないもの</h2></div>
+        <div>
+          <p>個人宅・私有施設の無断映像、認証が必要な映像、隠しカメラ、PTZ操作、顔や車両を特定する機能、映像の保存・再配布は対象外です。</p>
+          <p>ドローン映像は、飛行・撮影・配信の許可を持つ運用者が公式公開するもの以外は追加しません。このサイトからドローンを操作することもできません。</p>
+        </div>
+      </section>
+
+      <section class="about-section">
+        <div><p class="section-number">03</p><h2>プライバシー</h2></div>
+        <div>
+          <p>アカウント、広告、アクセス解析はありません。お気に入りはブラウザ内だけに保存します。「近い順」はブラウザの許可後に端末上で計算し、現在地をサーバーへ送信・保存しません。</p>
+          <p>カメラを選んで読込ボタンを押すと、公開元へ直接接続します。その時点から公開元のプライバシーポリシーと利用条件が適用されます。</p>
+        </div>
+      </section>
+
+      <section class="about-section">
+        <div><p class="section-number">04</p><h2>重要な制限</h2></div>
+        <div>
+          <p>「ライブ」や更新時刻は公開元の提供内容に基づく表示であり、このサイトが現在の稼働を保証するものではありません。災害、救助、運転判断など安全に関わる用途では、必ず現地当局の一次情報を確認してください。</p>
+          <p>世界中のすべてのカメラを網羅することはできません。追加候補は公開性・利用条件・安全性を確認して段階的に取り込みます。「ライブ衛星地図」と呼ばれるものの多くは更新間隔のある衛星画像であり、任意地点のリアルタイム動画ではないため、ライブカメラとは区別します。</p>
+        </div>
+      </section>
+
+      <div class="about-actions">
+        <a class="primary-link" href="./">地図を開く</a>
+        <a class="secondary-link" href="https://github.com/hjosugi/livecam" target="_blank" rel="noreferrer">ソースコード ↗</a>
+      </div>
+    </main>
+    <footer class="about-page-footer">Open LiveCam Atlas · <span id="year"></span> · Code under MIT, source data under each provider's terms.</footer>
+    <script type="module" src="/src/about.ts"></script>
+  </body>
+</html>

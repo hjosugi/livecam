@@ -1,0 +1,48 @@
+name: 公開ソースの提案
+description: 公式に公開されているカメラまたは一覧を提案する
+title: "[Source] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        提案ありがとうございます。個人宅、無断配信、認証が必要な映像、カメラ操作 URL は投稿しないでください。
+  - type: input
+    id: provider
+    attributes:
+      label: 公開元
+      description: 組織名と公式ホームページ
+      placeholder: "例: 道路管理機関 https://example.gov/"
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: カメラ API または公式一覧
+      placeholder: https://example.gov/cameras
+    validations:
+      required: true
+  - type: input
+    id: terms
+    attributes:
+      label: 利用条件・ライセンス
+      placeholder: https://example.gov/terms
+    validations:
+      required: true
+  - type: textarea
+    id: coverage
+    attributes:
+      label: 対象地域・目的・更新形式
+      description: 国や地域、道路/気象/観光などの目的、HLS/更新画像/一覧を記載してください。
+    validations:
+      required: true
+  - type: checkboxes
+    id: policy
+    attributes:
+      label: 公開性の確認
+      options:
+        - label: 一般利用者向けに意図して公開された公式ソースです
+          required: true
+        - label: 認証・アクセス制御の回避や秘密の URL を必要としません
+          required: true
+        - label: 個人の追跡や識別を目的とする提案ではありません
+          required: true

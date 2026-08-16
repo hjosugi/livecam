@@ -1,0 +1,19 @@
+{
+  "name": "Open LiveCam Atlas",
+  "short_name": "LiveCam Atlas",
+  "description": "公式公開ライブカメラを世界地図から探すプライバシー配慮型アトラス",
+  "lang": "ja",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#07110f",
+  "theme_color": "#07110f",
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
