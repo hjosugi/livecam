@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const [baseUrlInput, expectedRevision, expectedVersion = '0.1.0'] = process.argv.slice(2);
+const [baseUrlInput, expectedRevision, expectedVersion = '0.1.1'] = process.argv.slice(2);
 if (!baseUrlInput || !expectedRevision) {
   console.error('Usage: npm run verify:public -- <base-url> <full-revision> [version]');
   process.exit(2);

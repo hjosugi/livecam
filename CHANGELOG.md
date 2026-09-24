@@ -2,6 +2,12 @@
 
 このプロジェクトは [Semantic Versioning](https://semver.org/) を使用します。
 
+## [0.1.1] - 2026-09-24
+
+### Security
+
+- 開発依存の Vitest を 4.1.11 に更新（`@vitest/mocker` のリダイレクトモックを fs 許可リスト内に制限する修正 GHSA-82fw-gwwq-j7x9 を含む）。配信するサイトの動作に変更はありません
+
 ## [0.1.0] - 2026-08-16
 
 ### Added

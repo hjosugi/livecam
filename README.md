@@ -62,7 +62,7 @@ npm run check
 公開 Pages の commit SHA とカタログを読み戻す場合:
 
 ```bash
-npm run verify:public -- https://hjosugi.github.io/livecam/ <full-commit-sha> 0.1.0
+npm run verify:public -- https://hjosugi.github.io/livecam/ <full-commit-sha> 0.1.1
 ```
 
 ## カタログ更新
