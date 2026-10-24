@@ -2,6 +2,10 @@
 
 このプロジェクトは [Semantic Versioning](https://semver.org/) を使用します。
 
+## [0.1.2] - 2026-10-24
+
+- Update the reviewed dependencies and retain the recorded security compatibility fixes.
+
 ## [0.1.1] - 2026-09-24
 
 ### Security
